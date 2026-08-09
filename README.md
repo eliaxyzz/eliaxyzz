@@ -98,12 +98,12 @@ Graduated in **Computer Engineering**, I explore software as the intersection be
 
 <div align="center">
 
-<img src="https://github-readme-stats.vercel.app/api?username=eliadallanoce&show_icons=true&theme=radical&hide_border=true&bg_color=0D1117&title_color=00F5FF&icon_color=00F5FF&text_color=C9D1D9" width="48%"/>
-<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=eliadallanoce&layout=compact&theme=radical&hide_border=true&bg_color=0D1117&title_color=00F5FF&text_color=C9D1D9" width="42%"/>
+<img src="https://github-readme-stats-git-master-rickstaa.vercel.app/api?username=eliadallanoce&amp;show_icons=true&amp;theme=radical&amp;hide_border=true&amp;bg_color=0D1117&amp;title_color=00F5FF&amp;icon_color=00F5FF&amp;text_color=C9D1D9" width="48%"/>
+<img src="https://github-readme-stats-git-master-rickstaa.vercel.app/api/top-langs/?username=eliadallanoce&amp;layout=compact&amp;theme=radical&amp;hide_border=true&amp;bg_color=0D1117&amp;title_color=00F5FF&amp;text_color=C9D1D9" width="42%"/>
 
 <br/>
 
-<img src="https://github-readme-streak-stats.herokuapp.com/?user=eliadallanoce&theme=radical&hide_border=true&background=0D1117&ring=00F5FF&fire=00F5FF&currStreakLabel=00F5FF" width="60%"/>
+<img src="https://github-readme-streak-stats.herokuapp.com/?user=eliadallanoce&amp;theme=radical&amp;hide_border=true&amp;background=0D1117&amp;ring=00F5FF&amp;fire=00F5FF&amp;currStreakLabel=00F5FF" width="60%"/>
 
 </div>
 
