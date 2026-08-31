@@ -27,9 +27,8 @@ class Engineer {
 }
 ```
 
-**Currently** → deepening systems programming in Rust and modern web architectures.
-**Interested in** → data science, distributed systems, developer tooling, interface design.
-**Open to** → collaborations, open-source contributions, engineering roles.
+**Interested in** → data science & AI.
+**Open to** → collaborations, open-source contributions, developer/data scientists roles.
 
 ---
 
@@ -43,21 +42,6 @@ class Engineer {
 | **Data** | ![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=flat-square&logo=mysql&logoColor=white) ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=flat-square&logo=postgresql&logoColor=white) ![SQL Server](https://img.shields.io/badge/SQL_Server-CC2927?style=flat-square&logo=microsoftsqlserver&logoColor=white) ![Neo4J](https://img.shields.io/badge/Neo4J-008CC1?style=flat-square&logo=neo4j&logoColor=white) ![RStudio](https://img.shields.io/badge/RStudio-75AADB?style=flat-square&logo=rstudio&logoColor=white) |
 | **Infra & Tools** | ![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white) ![Git](https://img.shields.io/badge/Git-F05032?style=flat-square&logo=git&logoColor=white) ![Linux](https://img.shields.io/badge/Linux-FCC624?style=flat-square&logo=linux&logoColor=0F2027) ![REST API](https://img.shields.io/badge/REST_API-005571?style=flat-square&logo=fastapi&logoColor=white) ![Wireshark](https://img.shields.io/badge/Wireshark-1679A7?style=flat-square&logo=wireshark&logoColor=white) ![Packet Tracer](https://img.shields.io/badge/Packet_Tracer-1BA0D7?style=flat-square&logo=cisco&logoColor=white) |
 
----
-
-## Selected Work
-
-<!-- Sostituisci repo=... con i nomi reali dei tuoi repository -->
-<div align="center">
-
-<a href="https://github.com/eliaxyzz">
-  <img src="https://github-readme-stats.vercel.app/api/pin/?username=eliaxyzz&repo=HEX-1&theme=radical&hide_border=true&bg_color=0D1117&title_color=00F5FF&icon_color=00F5FF&text_color=8B9BB4" width="48%"/>
-</a>
-<a href="https://github.com/eliaxyzz">
-  <img src="https://github-readme-stats.vercel.app/api/pin/?username=eliaxyzz&repo=ibid-2&theme=radical&hide_border=true&bg_color=0D1117&title_color=00F5FF&icon_color=00F5FF&text_color=8B9BB4" width="48%"/>
-</a>
-
-</div>
 
 ---
 
