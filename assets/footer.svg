@@ -1,0 +1,178 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 150" width="800" height="150" role="img" aria-label="Engineering and creativity at the service of software">
+  <title>Elia Dallanoce — footer</title>
+
+  <defs>
+    <linearGradient id="fbg" x1="0" y1="1" x2="1" y2="0">
+      <stop offset="0%" stop-color="#0F2027"/>
+      <stop offset="55%" stop-color="#162C36"/>
+      <stop offset="100%" stop-color="#1A303A"/>
+    </linearGradient>
+
+    <radialGradient id="fhalo" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#00F5FF" stop-opacity="0.18"/>
+      <stop offset="60%" stop-color="#00F5FF" stop-opacity="0.04"/>
+      <stop offset="100%" stop-color="#00F5FF" stop-opacity="0"/>
+    </radialGradient>
+
+    <linearGradient id="fwave" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#00F5FF" stop-opacity="0"/>
+      <stop offset="40%" stop-color="#00F5FF" stop-opacity="0.7"/>
+      <stop offset="100%" stop-color="#00F5FF" stop-opacity="0"/>
+    </linearGradient>
+
+    <linearGradient id="frule" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#00F5FF" stop-opacity="0"/>
+      <stop offset="50%" stop-color="#00F5FF" stop-opacity="0.75"/>
+      <stop offset="100%" stop-color="#00F5FF" stop-opacity="0"/>
+    </linearGradient>
+
+    <pattern id="fgrid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M40 0 H0 V40" fill="none" stroke="#8B9BB4" stroke-width="0.5" stroke-opacity="0.14"/>
+    </pattern>
+
+    <linearGradient id="fmaskGrad" x1="1" y1="1" x2="0" y2="0">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.7"/>
+      <stop offset="60%" stop-color="#ffffff" stop-opacity="0.2"/>
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0.03"/>
+    </linearGradient>
+    <mask id="fmask">
+      <rect width="800" height="150" fill="url(#fmaskGrad)"/>
+    </mask>
+
+    <filter id="fglow" x="-80%" y="-80%" width="260%" height="260%">
+      <feGaussianBlur stdDeviation="4" result="b"/>
+      <feMerge>
+        <feMergeNode in="b"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <filter id="fmicro" x="-150%" y="-150%" width="400%" height="400%">
+      <feGaussianBlur stdDeviation="2" result="b"/>
+      <feMerge>
+        <feMergeNode in="b"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <clipPath id="fframe">
+      <rect x="0" y="0" width="800" height="150" rx="16"/>
+    </clipPath>
+
+    <style>
+      .f-quote {
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        font-size: 17px;
+        font-style: italic;
+        font-weight: 500;
+        letter-spacing: 0.2px;
+        fill: #DFF9FC;
+      }
+      .f-sign {
+        font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, "Liberation Mono", monospace;
+        font-size: 10.5px;
+        letter-spacing: 3px;
+        fill: #8B9BB4;
+        fill-opacity: 0.6;
+      }
+
+      @keyframes f-float { 0%,100% { transform: translateY(0); } 50% { transform: translateY(-7px); } }
+      @keyframes f-float2 { 0%,100% { transform: translateY(3px); } 50% { transform: translateY(-5px); } }
+      .f-a { animation: f-float 8s ease-in-out infinite; }
+      .f-b { animation: f-float2 11s ease-in-out infinite; }
+
+      @keyframes f-pulse { 0%,100% { opacity: 0.3; } 50% { opacity: 1; } }
+      @keyframes f-soft { 0%,100% { opacity: 0.45; } 50% { opacity: 0.9; } }
+      .f-pulse { animation: f-pulse 3.8s ease-in-out infinite; }
+      .f-slow { animation: f-pulse 5.6s ease-in-out infinite; }
+      .f-soft { animation: f-soft 5s ease-in-out infinite; }
+
+      @keyframes f-flow { to { stroke-dashoffset: -400; } }
+      .f-wave { stroke-dasharray: 14 10; animation: f-flow 10s linear infinite; }
+      .f-circuit { stroke-dasharray: 5 9; animation: f-flow 16s linear infinite; }
+
+      @keyframes f-draw { to { stroke-dashoffset: 0; } }
+      .f-rule { stroke-dasharray: 420; stroke-dashoffset: 420; animation: f-draw 2.4s cubic-bezier(.22,.8,.24,1) forwards; }
+
+      @keyframes f-spin { to { transform: rotate(360deg); } }
+      .f-ring { transform-box: fill-box; transform-origin: center; animation: f-spin 26s linear infinite; }
+
+      @media (prefers-reduced-motion: reduce) {
+        .f-a, .f-b, .f-pulse, .f-slow, .f-soft, .f-wave, .f-circuit, .f-ring { animation: none; }
+        .f-rule { stroke-dashoffset: 0; animation: none; }
+      }
+    </style>
+  </defs>
+
+  <g clip-path="url(#fframe)">
+    <rect width="800" height="150" fill="url(#fbg)"/>
+    <rect width="800" height="150" fill="url(#fgrid)" mask="url(#fmask)"/>
+
+    <ellipse class="f-soft" cx="400" cy="80" rx="300" ry="110" fill="url(#fhalo)"/>
+
+    <!-- Onde in alto (continuità con l'header) -->
+    <g fill="none" stroke-linecap="round">
+      <path class="f-wave" d="M-20 34 C 90 6, 180 62, 290 34 S 480 6, 590 34 S 760 62, 830 34"
+            stroke="url(#fwave)" stroke-width="1.4" opacity="0.85"/>
+      <path class="f-wave" style="animation-duration:14s"
+            d="M-20 18 C 110 -6, 200 46, 310 18 S 510 -6, 620 18 S 790 46, 830 18"
+            stroke="url(#fwave)" stroke-width="0.9" opacity="0.4"/>
+    </g>
+
+    <!-- Nodi laterali -->
+    <g class="f-a">
+      <g stroke="#00F5FF" stroke-width="0.8" opacity="0.3" fill="none">
+        <path d="M78 62 L124 84 L96 116"/>
+        <path d="M78 62 L96 116"/>
+      </g>
+      <g fill="#00F5FF" filter="url(#fmicro)">
+        <circle cx="78" cy="62" r="2.8" class="f-pulse"/>
+        <circle cx="124" cy="84" r="3.6" class="f-slow"/>
+        <circle cx="96" cy="116" r="2.2" class="f-pulse" style="animation-delay:1.1s"/>
+      </g>
+    </g>
+
+    <g class="f-b">
+      <g stroke="#00F5FF" stroke-width="0.8" opacity="0.3" fill="none">
+        <path d="M722 60 L676 86 L706 118"/>
+        <path d="M722 60 L706 118"/>
+      </g>
+      <g fill="#00F5FF" filter="url(#fmicro)">
+        <circle cx="722" cy="60" r="2.8" class="f-slow"/>
+        <circle cx="676" cy="86" r="3.4" class="f-pulse" style="animation-delay:.7s"/>
+        <circle cx="706" cy="118" r="2" class="f-slow" style="animation-delay:1.6s"/>
+      </g>
+      <g class="f-ring">
+        <circle cx="700" cy="88" r="44" fill="none" stroke="#00F5FF" stroke-width="0.7"
+                stroke-opacity="0.35" stroke-dasharray="3 12"/>
+      </g>
+    </g>
+
+    <!-- Curve bezier -->
+    <g fill="none" stroke="#00F5FF" stroke-linecap="round" opacity="0.4">
+      <path class="f-circuit" d="M170 128 C 260 96, 340 140, 430 112 S 600 88, 660 132" stroke-width="1"/>
+    </g>
+
+    <!-- Riga luminosa -->
+    <line class="f-rule" x1="190" y1="58" x2="610" y2="58" stroke="url(#frule)" stroke-width="1.6" stroke-linecap="round"/>
+
+    <!-- Citazione -->
+    <g text-anchor="middle">
+      <text class="f-quote f-soft" x="400" y="92" fill="#00F5FF" filter="url(#fglow)" opacity="0.35">
+        “Engineering and creativity at the service of software.”
+      </text>
+      <text class="f-quote" x="400" y="92">
+        “Engineering and creativity at the service of software.”
+      </text>
+      <text class="f-sign" x="400" y="120">ELIA DALLANOCE  ·  BUILT WITH RIGOR</text>
+    </g>
+
+    <!-- Parentesi angolari -->
+    <g stroke="#00F5FF" stroke-width="1.3" fill="none" opacity="0.45" stroke-linecap="round">
+      <path class="f-soft" d="M24 118 L24 132 L38 132"/>
+      <path class="f-soft" style="animation-delay:1.2s" d="M776 118 L776 132 L762 132"/>
+    </g>
+
+    <rect x="0.75" y="0.75" width="798.5" height="148.5" rx="16" fill="none" stroke="#00F5FF" stroke-opacity="0.16" stroke-width="1.5"/>
+  </g>
+</svg>
