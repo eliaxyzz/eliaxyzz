@@ -126,6 +126,11 @@
         stroke-dashoffset: 320;
         animation: draw 2.2s cubic-bezier(.22,.8,.24,1) forwards;
       }
+      .trace {
+        stroke-dasharray: 420;
+        stroke-dashoffset: 420;
+        animation: draw 4s ease-in-out infinite alternate;
+      }
       .wave-flow {
         stroke-dasharray: 14 10;
         animation: dash-flow 9s linear infinite;
@@ -150,7 +155,7 @@
         .float-a, .float-b, .float-c, .pulse, .pulse-slow, .pulse-soft,
         .halo, .title-aura, .wave-flow, .circuit, .ring-spin, .ring-spin-rev,
         .sweep, .caret { animation: none; }
-        .draw-rule { stroke-dashoffset: 0; animation: none; }
+        .draw-rule, .trace { stroke-dashoffset: 0; animation: none; }
       }
     </style>
   </defs>
@@ -179,36 +184,28 @@
 
     <!-- Bezier "creative" curves, right side -->
     <g fill="none" stroke="#00F5FF" stroke-linecap="round" opacity="0.5">
-      <path class="circuit float-c" d="M600 42 C 668 62, 690 108, 668 150 S 690 206, 752 214" stroke-width="1.2"/>
-      <path class="circuit float-b" style="animation-duration:17s" d="M712 24 C 758 74, 742 128, 700 168" stroke-width="1"/>
+      <path class="circuit float-c" d="M706 18 C 764 40, 782 76, 764 112" stroke-width="1.2" opacity="0.6"/>
+      <path class="circuit float-b" style="animation-duration:17s" d="M770 200 C 790 168, 782 140, 762 118" stroke-width="1"/>
     </g>
 
-    <!-- Node constellation -->
+    <!-- Albero binario -->
     <g class="float-a">
-      <g stroke="#00F5FF" stroke-width="0.9" opacity="0.35" fill="none">
-        <path d="M636 78 L698 106 L664 158 L610 132 Z"/>
-        <path d="M636 78 L664 158"/>
-        <path d="M698 106 L748 72"/>
+      <g stroke="#00F5FF" stroke-width="1.1" stroke-opacity="0.42" fill="none" stroke-linecap="round">
+        <path d="M668 66 L620 116 M668 66 L716 116"/>
+        <path d="M620 116 L596 164 M620 116 L644 164"/>
+        <path d="M716 116 L692 164 M716 116 L740 164"/>
       </g>
-      <g fill="#00F5FF" filter="url(#microGlow)">
-        <circle cx="636" cy="78" r="3.4" class="pulse"/>
-        <circle cx="698" cy="106" r="4.6" class="pulse-slow"/>
-        <circle cx="664" cy="158" r="3" class="pulse" style="animation-delay:1.2s"/>
-        <circle cx="610" cy="132" r="2.4" class="pulse-slow" style="animation-delay:.6s"/>
-        <circle cx="748" cy="72" r="2.2" class="pulse" style="animation-delay:1.8s"/>
+      <g fill="#0F2027" stroke="#00F5FF" stroke-width="1.5">
+        <circle cx="668" cy="66" r="8" class="pulse-slow"/>
+        <circle cx="620" cy="116" r="6.5" class="pulse" style="animation-delay:.4s"/>
+        <circle cx="716" cy="116" r="6.5" class="pulse" style="animation-delay:.9s"/>
+        <circle cx="596" cy="164" r="4.6" class="pulse-slow" style="animation-delay:1.3s"/>
+        <circle cx="644" cy="164" r="4.6" class="pulse-slow" style="animation-delay:1.7s"/>
+        <circle cx="692" cy="164" r="4.6" class="pulse-slow" style="animation-delay:2.1s"/>
+        <circle cx="740" cy="164" r="4.6" class="pulse-slow" style="animation-delay:2.5s"/>
       </g>
-    </g>
-
-    <!-- Orbital rings -->
-    <g class="float-b" opacity="0.55">
-      <g class="ring-spin">
-        <circle cx="700" cy="125" r="62" fill="none" stroke="#00F5FF" stroke-width="0.8"
-                stroke-opacity="0.45" stroke-dasharray="3 12"/>
-      </g>
-      <g class="ring-spin-rev">
-        <circle cx="700" cy="125" r="88" fill="none" stroke="#8B9BB4" stroke-width="0.7"
-                stroke-opacity="0.28" stroke-dasharray="1 16"/>
-      </g>
+      <circle cx="668" cy="66" r="8" fill="#00F5FF" opacity="0.28" filter="url(#microGlow)"/>
+      <text class="t-meta" x="668" y="190" text-anchor="middle">O(log n)</text>
     </g>
 
     <!-- Floating micro-particles -->
@@ -239,11 +236,11 @@
     <line class="draw-rule" x1="71" y1="154" x2="391" y2="154" stroke="url(#ruleFade)" stroke-width="2" stroke-linecap="round"/>
 
     <!-- Subtitle -->
-    <text class="t-sub" x="71" y="184">Senior Software Engineer &amp; UI Designer</text>
-    <rect class="caret" x="437" y="171" width="8" height="16" fill="#00F5FF" opacity="0.85"/>
+    <text class="t-sub" x="71" y="184">Computer Science Engineer</text>
+    <rect class="caret" x="366" y="171" width="8" height="16" fill="#00F5FF" opacity="0.85"/>
 
     <!-- Meta line -->
-    <text class="t-meta" x="72" y="214">MATHEMATICAL RIGOR  ·  SYSTEM DESIGN  ·  CREATIVE VISION</text>
+    <text class="t-meta" x="72" y="214">ALGORITHMS  ·  SYSTEM DESIGN  ·  CLEAN ARCHITECTURE</text>
 
     <!-- Corner brackets -->
     <g stroke="#00F5FF" stroke-width="1.4" fill="none" opacity="0.55" stroke-linecap="round">
